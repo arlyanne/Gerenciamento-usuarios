@@ -1,0 +1,66 @@
+{
+  "usuarios": [
+    {
+      "id": "68d2",
+      "nome": "Teste01",
+      "matricula": "001",
+      "idade": "21",
+      "cargo": "Analista",
+      "tipo": 2
+    },
+    {
+      "id": "f467",
+      "nome": "teste02",
+      "matricula": "002",
+      "idade": "25",
+      "cargo": "Gerente",
+      "tipo": 1
+    },
+    {
+      "id": "6932",
+      "nome": "teste03",
+      "matricula": "003",
+      "idade": "26",
+      "cargo": "Desenvolvedor",
+      "tipo": 1
+    },
+    {
+      "id": "646f",
+      "nome": "teste04",
+      "matricula": "004",
+      "idade": "27",
+      "cargo": "Analista",
+      "tipo": 1
+    },
+    {
+      "id": "2ee8",
+      "nome": "teste05",
+      "matricula": "005",
+      "idade": "29",
+      "cargo": "Gerente",
+      "tipo": 2
+    },
+    {
+      "id": "004c",
+      "nome": "teste06",
+      "matricula": "006",
+      "idade": "26",
+      "cargo": "Desenvolvedor",
+      "tipo": 2
+    }
+  ],
+  "login": [
+    {
+      "id": "1",
+      "usuario": "admin",
+      "senha": "1234",
+      "tipo": 1
+    },
+    {
+      "id": "2",
+      "usuario": "comum",
+      "senha": "5678",
+      "tipo": 2
+    }
+  ]
+}
