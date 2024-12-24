@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
         {{ useStore.usuarioLogado.usuario }}
       <v-btn icon>
-        <v-icon @click="deslogar()">mdi-export</v-icon>
+        <v-icon @click="deslogar()" title="Sair">mdi-export</v-icon>
       </v-btn>
     </v-toolbar>
   </div>
