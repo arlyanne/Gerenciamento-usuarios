@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="d-flex justify-space-between mb-5">
-        <p class=" text-h5">Usuários</p>
+        <p class=" text-h5 text-primary">Usuários</p>
         <v-btn
           v-if="useStore.usuarioLogado.tipo === 1"
           @click="$router.push({ path: '/usuario/novo' })"
@@ -20,6 +20,8 @@
           items-per-page="5"
           items-per-page-text="Itens por página"
           page-text="{0}-{1} de {2}"
+          no-data-text="Nenhum dado disponível"
+          hover
         >
           <template #[`item.tipo`]="{ item }">
             {{ item.tipo == 1 ? "Admin" : "Comum" }}
@@ -33,6 +35,7 @@
               @click="abrirModalEditar(item)"
               class="me-2"
               title="Editar"
+              color="primary"
             >
               mdi-pencil
             </v-icon>
@@ -41,6 +44,7 @@
               class="me-2"
               title="Excluir"
               @click="abrirModalExclusao(item.id)"
+              color="primary"
             >
               mdi-delete
             </v-icon>
@@ -89,8 +93,8 @@ const typeSnackbar = ref("");
 const idUsuario = ref();
 const usuarioEditar = ref({});
 const headers = ref([
-  { title: "Nome", value: "nome" },
-  { title: "Matricula", value: "matricula" },
+  { title: "Nome", value: "nome", sortable:true },
+  { title: "Matricula", value: "matricula", sortable:true },
   { title: "Idade", value: "idade" },
   { title: "Cargo", value: "cargo" },
   { title: "Tipo", value: "tipo" },

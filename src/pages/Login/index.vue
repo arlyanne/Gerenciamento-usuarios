@@ -2,7 +2,7 @@
   <v-content class="login-page">
     <v-card width="365" class="pa-4">
       <v-card-item>
-        <v-card-title> Login </v-card-title>
+        <v-card-title class="text-primary"> Login </v-card-title>
       </v-card-item>
       <v-form ref="form" @submit.prevent="submitLogin">
         <v-container>

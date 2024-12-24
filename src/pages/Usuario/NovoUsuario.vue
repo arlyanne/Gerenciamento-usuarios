@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-      <p class=" text-h5 mb-5">Cadastro de usuário</p>
+      <p class=" text-h5 mb-5 text-primary">Cadastro de usuário</p>
       <v-card>
         <v-form ref="form" @submit.prevent="salvar()">
-          <v-container>
+          <v-container class="mt-5">
             <v-row>
               <v-col cols="12" lg="8" md="4">
                 <v-text-field
@@ -133,10 +133,11 @@ const rules = ref({
 });
 
 async function salvar() {
-  loading.value = true;
+  
   const formValid = await form.value.validate();
   textSnackbar.value = "";
   if (formValid.valid) {
+    loading.value = true;
     try {
       const listaUsuarios = await UsuarioService.getUsuarios();
       const filtroMatricula = listaUsuarios.find(

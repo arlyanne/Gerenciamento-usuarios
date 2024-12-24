@@ -39,14 +39,6 @@
       "idade": "29",
       "cargo": "Gerente",
       "tipo": 2
-    },
-    {
-      "id": "004c",
-      "nome": "teste06",
-      "matricula": "006",
-      "idade": "26",
-      "cargo": "Desenvolvedor",
-      "tipo": 2
     }
   ],
   "login": [
